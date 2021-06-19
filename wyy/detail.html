@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>详情</title>
+    <link rel="shortcut icon" href="./img/logo.jpg" />
+    
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/detail.css">
+    <link rel="stylesheet" href="./css/basic.css">
+    <link rel="stylesheet" href="./css/wyy.css">
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/cookie.js"></script>
+    <script src="./js/layer/layer.js"></script>
+    <script src="./js/ajax.js"></script>
+    <script src="./js/checkLogin.js"></script>
+
+    <script src="./js/wyy.js"></script>
+</head>
+<body>
+    <div class="top">
+        <div class="main" style="height: 70px;">
+            <div class="logo">
+                <img src="./img/logo.jpg" alt="#">
+                <h1 style="padding-left: 5px;color: #ccc;width: 140px;font-size: 24px; ">网易云音乐</h1>
+            </div>
+            <ul>
+                <li class="li"><a href="wyy.index.html">发现音乐</a></li>
+                <li class="li"><a href="https://music.163.com/#/my/">我的音乐</a></li>
+                <li class="li"><a href="https://music.163.com/#/friend">朋友</a></li>
+                <li class="li"><a href="list.html">商城</a></li>
+                <li class="li"><a href="https://music.163.com/st/musician">音乐人</a></li>
+                <li class="li"><a href="https://music.163.com/#/download">下载客户端</a></li>
+            </ul>
+
+            <input type="text" value="音乐/视频/用户/电台">
+            <div class="c">创作者中心</div>
+            <a class="a-" href="login.html">登录</a>
+        </div>
+    </div>
+<!-- 详情 -->
+<div class="wrap detail">
+    <div class="content">
+        <div class="up clearfix">
+            <div class="enlarge fl">
+                <div class="middle">
+                    <img src="https://bkimg.cdn.bcebos.com/pic/dbb44aed2e738bd40840d13ca18b87d6277ff95e?x-bce-process=image/resize,m_lfit,w_268,limit_1" alt="">
+                    <div class="shade"></div>
+                    <div class="big">
+                        <img src="https://bkimg.cdn.bcebos.com/pic/dbb44aed2e738bd40840d13ca18b87d6277ff95e?x-bce-process=image/resize,m_lfit,w_268,limit_1" alt="">
+                    </div>
+                </div>
+                <div class="small clearfix">
+                    <a href="" class="leftBtn fl">&lt;</a>
+                    <div class="wraper fl">
+                        <ul>
+                            <!-- <li class="active"><img src="https://bkimg.cdn.bcebos.com/pic/32fa828ba61ea8d32d119dfb910a304e251f581a?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UxNTA=,g_7,xp_5,yp_5" alt=""></li>
+                            <li><img src="https://img.alicdn.com/imgextra/i4/26444719/O1CN01rm8rNy1kjLfh0RQMU_!!26444719.jpg" alt=""></li>
+                            <li><img src="https://img.alicdn.com/imgextra/i4/26444719/O1CN01JiaEn31kjLfhzzQ5q_!!26444719.jpg" alt=""></li> -->
+                        </ul>
+                    </div>
+                    
+                    <a href="" class="rightBtn fr">&gt;</a>
+                </div>
+            </div>
+            <div class="description fl">
+                <h4>标题</h4>
+                <p class="free">免息</p>
+                <div class="price">
+                    <p class="souceprice">价格：￥<span>000</span>元</p>
+                    <p class="coupon">优惠券：<span>满减</span></p>
+                </div>
+                <div class="delivery">
+                    配送：
+                    <select name="provinces"></select>
+                    <select name="citys"></select>
+                    <select name="areas"></select>
+                    <p>其他信息</p>
+                </div>
+                <div class="addCart clearfix">
+                    <div class="number fl">
+                        <input type="text" name="num" value=1>
+                        <button class="add">+</button>
+                        <button class="reduce">-</button>
+                    </div>
+                    <button class="fl addBtn">加入购物车</button>
+                    <a href="cart.html" class="fl btn toCart">进入购物车</a>
+                </div>
+                <div class="share">
+                    关注
+                    分享
+                </div>
+            </div>
+            <div class="guess fr">
+                <h3>猜你喜欢</h3>
+                <ul>
+                    <li>
+                        <img width="180" src="https://img10.360buyimg.com/n1/s150x150_jfs/t1/130598/20/15852/147760/5fae5664E6d66a09c/ee060d4630968d60.jpg" alt="">
+                        <p>描述</p>
+                        <span>200</span>
+                    </li>
+                    <li>
+                        <img width="180" src="https://img10.360buyimg.com/n1/s150x150_jfs/t1/130598/20/15852/147760/5fae5664E6d66a09c/ee060d4630968d60.jpg" alt="">
+                        <p>描述</p>
+                        <span>200</span>
+                    </li>
+                </ul>
+                <a href="" class="prev">上</a>
+                <a href="" class="next">下</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 推荐爆款 -->
+<div class="wrap recommend">
+    <div class="content">
+        <h3>推荐爆款</h3>
+        <ul class="clearfix">
+            <li>
+                <img src="https://img13.360buyimg.com/n2/jfs/t1/143075/25/14089/164663/5fae5909E010a3939/a2494771cfdbf4eb.jpg" alt="">
+                <br>
+                <span>2000</span>
+            </li>
+            <li>
+                <img src="https://img13.360buyimg.com/n2/jfs/t1/143075/25/14089/164663/5fae5909E010a3939/a2494771cfdbf4eb.jpg" alt="">
+                <br>
+                <span>2000</span>
+            </li>
+            <li>
+                <img src="https://img13.360buyimg.com/n2/jfs/t1/143075/25/14089/164663/5fae5909E010a3939/a2494771cfdbf4eb.jpg" alt="">
+                <br>
+                <span>2000</span>
+            </li>
+            <li>
+                <img src="https://img13.360buyimg.com/n2/jfs/t1/143075/25/14089/164663/5fae5909E010a3939/a2494771cfdbf4eb.jpg" alt="">
+                <br>
+                <span>2000</span>
+            </li>
+            <li>
+                <img src="https://img13.360buyimg.com/n2/jfs/t1/143075/25/14089/164663/5fae5909E010a3939/a2494771cfdbf4eb.jpg" alt="">
+                <br>
+                <span>2000</span>
+            </li>
+            <li>
+                <img src="https://img13.360buyimg.com/n2/jfs/t1/143075/25/14089/164663/5fae5909E010a3939/a2494771cfdbf4eb.jpg" alt="">
+                <br>
+                <span>2000</span>
+            </li>
+            <li>
+                <img src="https://img13.360buyimg.com/n2/jfs/t1/143075/25/14089/164663/5fae5909E010a3939/a2494771cfdbf4eb.jpg" alt="">
+                <br>
+                <span>2000</span>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="wrap details">
+    <div class="content clearfix">
+        <div class="details-left fl">
+            <h4>浏览历史</h4>
+            <ul>
+                <li>
+                    <img width="180" src="https://img10.360buyimg.com/n1/s150x150_jfs/t1/130598/20/15852/147760/5fae5664E6d66a09c/ee060d4630968d60.jpg" alt="">
+                    <p>描述</p>
+                    <span>200</span>
+                </li>
+                <li>
+                    <img width="180" src="https://img10.360buyimg.com/n1/s150x150_jfs/t1/130598/20/15852/147760/5fae5664E6d66a09c/ee060d4630968d60.jpg" alt="">
+                    <p>描述</p>
+                    <span>200</span>
+                </li>
+                <li>
+                    <img width="180" src="https://img10.360buyimg.com/n1/s150x150_jfs/t1/130598/20/15852/147760/5fae5664E6d66a09c/ee060d4630968d60.jpg" alt="">
+                    <p>描述</p>
+                    <span>200</span>
+                </li>
+            </ul>
+        </div>
+        <div class="details-right fr">
+            <div class="tab">
+                <ul>
+                    <li class="active">商品介绍</li>
+                    <li>售后服务</li>
+                    <li>商品评价</li>
+                </ul>
+                <ol>
+                    <li class="active">111</li>
+                    <li>222</li>
+                    <li>333</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="./js/enlarge.js"></script>
+<script src="./js/detail.js"></script>
+<!-- <script src="./js/tab.js"></script> -->
+<script type="text/javascript">
+
+</script>
+</html>

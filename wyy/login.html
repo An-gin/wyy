@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Fullscreen Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- CSS -->
+        <link rel="shortcut icon" href="./img/logo.jpg" />
+        <link rel="stylesheet" href="./css/css/reset.css">
+        <link rel="stylesheet" href="./css/css/supersized.css">
+        <link rel="stylesheet" href="./css/css/style.css">
+
+
+    </head>
+
+    <body oncontextmenu="return false">
+
+        <div class="page-container">
+            <h1>Login</h1>
+            <form action="" method="post" class="loginForm">
+				<div>
+					<input type="text" name="username" class="username" placeholder="username" autocomplete="off"/>
+				</div>
+                <div>
+					<input type="password" name="password" class="password" placeholder="password" oncontextmenu="return false" onpaste="return false" />
+                </div>
+                <input type="checkbox" name="remember" style="width: 15px;height: 15px;"> remember
+                <button id="submit" type="submit">Sign in</button>
+                
+                <a href="register.html" class="btn btn-default submit-"><button type="button" >regist in</button></a>
+            </form>
+            <div class="connect">
+                <p>If we can only encounter each other rather than stay with each other,then I wish we had never encountered.</p>
+				<p style="margin-top:20px;">如果只是遇见，不能停留，不如不遇见。</p>
+            </div>
+        </div>
+		<div class="alert" style="display:none">
+			<h2>消息</h2>
+			<div class="alert_con">
+				<p id="ts"></p>
+				<p style="line-height:70px"><a class="btn">确定</a></p>
+			</div>
+		</div>
+
+        <!-- Javascript -->
+		<script src="./js/js/jquery.min1.js" type="text/javascript"></script>
+        <script src="./js/js/supersized.3.2.7.min.js"></script>
+        <script src="./js/js/supersized-init.js"></script>
+		<script>
+		window.onload = function()
+		{
+			$(".connect p").eq(0).animate({"left":"0%"}, 600);
+			$(".connect p").eq(1).animate({"left":"0%"}, 400);
+		}
+		function is_hide(){ $(".alert").animate({"top":"-40%"}, 300) }
+		function is_show(){ $(".alert").show().animate({"top":"45%"}, 300) }
+		</script>
+    </body>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/layer/layer.js"></script>
+    <script src="./js/ajax.js"></script>
+    <script src="./js/cookie.js"></script>
+    <script src="./js/validate/jquery.validate.min.js"></script>
+    <script src="./js/validate/localization/messages_zh.min.js"></script>
+    <script src="./js/login.js"></script>
+
+</html>
+

@@ -1,0 +1,183 @@
+
+.main{
+    width: 1100px;
+    margin: 0 auto;
+    /* border:1px solid skyblue; */
+}
+.main-{
+    width: 980px;
+    margin: 0 auto;
+    /* border:1px solid hotpink; */
+}
+.totop{
+    position:fixed;
+    bottom: 10px;
+    right: 5%;
+    width: 35px;
+    height: 35px;
+    border-radius: 3px;
+    opacity: 0.8;
+    /* line-height: 30px; */
+    text-align: center;
+    background-color: #ccc;
+}
+.top{
+    height: 70px;
+    /* border:1px solid aquamarine; */
+    background: #242424;
+}
+.top .main{
+    display: flex;
+}
+.top .logo{
+    display: flex;
+    padding: 19px 10px 19px 0;
+}
+.top ul{
+    display: flex;
+    line-height: 70px;
+}
+.top .main ul li a {
+    font-size: 14px;
+    padding: 0 19px;
+    color: #ccc;
+}
+.top input {
+    width: 142px;
+    height: 28px;
+    margin: 19px 0 0 30px;
+    border-radius: 16px;
+    font-size: 12px;
+    color: #9b9b9b;
+    border:0px;
+    outline-style: none ;
+    padding-left: 10px;
+}
+.top .c{
+    text-align: center;
+    margin: 22px 0 0 20px;
+    width: 90px;
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #333;
+    border-radius: 12px;
+    color: #ccc;
+}
+.top .main .a-{
+    margin-left: 20px;
+    line-height: 70px;
+    color: #ccc;
+}
+.top .main .logout{
+    margin-left: 2px;
+    line-height: 70px;
+    color: #ccc;
+}
+/****************top *****************************************/
+.nav{
+    height: 35px;
+    /* border:1px solid blue; */
+    background: #c20c0c;
+}
+.nav ul{
+    display: flex;
+    margin-left: 180px;
+}
+.nav ul li{
+    margin: 7px 17px 0;
+    padding: 0 13px;
+}
+.nav ul li a{
+    color: #fff;
+}
+/* ***********************banner*************************** */
+/* .banner{
+    border:1px solid pink;
+    height: 285px;
+}
+.banner img {
+    width: 980px;
+    height: 284px;
+} */
+/***********************setcion*****************************  */
+.setcion{
+    border-top:1px solid #F2F2F2;
+    background: #F3F3F3;
+    /* height: 1425px; */
+}
+.setcion .main-{
+    display: flex;
+    background: #FFF;
+}
+.setcion .-left .-top{
+    display: flex;
+    border-bottom: 2px solid #c20c0c;
+}
+/* -top-********************** */
+.setcion .-left{
+    width: 691px;
+    padding: 20px 20px 40px;
+    border-left: 0.5px solid #9b9b9b;
+
+}
+.setcion .-left .-top{
+    height: 35px;
+}
+.setcion .-left .-top ol{
+    display: flex;
+    margin: 7px 0 0 20px;
+}
+.setcion ol .l{
+    margin: 0 10px;
+}
+.setcion .-left ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.setcion .-left ul li{
+    padding:35px 16px 42px 16px;
+}
+.setcion .-left ul li a img{
+    width: 140px;
+    height: 140px;
+}
+.setcion .-left ul li a p{
+    padding-top: 5px;
+    width: 140px;
+}
+/* left*************************************** */
+.setcion .-right{
+    width: 250px;
+    border-left:1px solid #F2F2F2;
+    border-right: 1px solid #9b9b9b;
+}
+.setcion .-right .r-t{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 17px 0;
+    border-bottom: 1px solid gray;
+}
+.setcion .-right .r-c .r-c-a{
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    margin: 8px 20px;
+    background-color:#F2F2F2;
+}
+.setcion .-right .r-c .r-c-a span{
+    margin-left: 25px;
+}
+/* **********************foot******************************** */
+.foot{
+    border-top:1px solid #9b9b9b;
+    /* height: 173px; */
+    background:#F2F2F2;
+}
+.foot .main-{
+    display: flex;
+}
+.foot .main- .ft-lf p{
+    padding: 5px 0 5PX 5PX ;
+}
